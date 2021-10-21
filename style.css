@@ -1,0 +1,119 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.attribution {
+	font-size: 11px;
+	text-align: center;
+}
+.attribution a {
+	color: hsl(228, 45%, 44%);
+}
+:root {
+	/* ## Colors
+    
+    ### Primary */
+
+	--pale-blue: hsl(225, 100%, 94%);
+	--brigh-blue: hsl(245, 75%, 52%);
+
+	/* ### Neutral */
+	--very-pale-blue: hsl(225, 100%, 98%);
+	--desaturated-blue: hsl(224, 23%, 55%);
+	--dark-blue: hsl(223, 47%, 23%);
+}
+
+body {
+	background-color: var(--pale-blue);
+	flex-direction: column;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	align-items: center;
+	position: relative;
+}
+.back {
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	z-index: -2;
+}
+.back img {
+	width: 100%;
+}
+.card {
+	display: flex;
+	flex-direction: column;
+	width: 324px;
+	height: 546px;
+	border-radius: 10px;
+	background-color: white;
+	margin: 2rem;
+}
+
+.card .image img {
+	width: 100%;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+
+.card .content {
+	text-align: center;
+}
+
+.card .content h2 {
+	font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+	font-weight: bold;
+	color: var(--dark-blue);
+	margin: 1rem 0;
+}
+
+.card .content p {
+	font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+	color: var(--desaturated-blue);
+	line-height: 1.5;
+}
+
+.card .content .sub_section {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	text-align: center;
+	align-items: center;
+	background-color: var(--very-pale-blue);
+	margin: 1rem;
+	border-radius: 10px;
+	padding: 10px;
+}
+
+.card .content .sub_section .sub_content .hd {
+	color: var(--dark-blue);
+	font-weight: bold;
+}
+
+.card .content .sub_section .sub_link a {
+	color: var(--brigh-blue);
+	font-weight: bold;
+}
+
+.btn {
+	background-color: var(--brigh-blue);
+	color: white;
+	font-weight: bold;
+	padding: 1rem 4.6rem;
+	border: none;
+	outline: none;
+	border-radius: 10px;
+	margin: 10px 0;
+	cursor: pointer;
+	box-shadow: 0px 15px 20px rgba(46, 64, 229, 0.4);
+}
+
+.cancel {
+	margin-top: 0.85rem;
+	font-weight: bold;
+	color: var(--desaturated-blue);
+	cursor: pointer;
+}
